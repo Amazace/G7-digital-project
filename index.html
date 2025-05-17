@@ -4,15 +4,68 @@
   <meta charset="UTF-8">
   <title>橫著滾吧</title>
   <style>
-    /* 這裡放 style 區塊（如你提供的樣式） */
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .storytelling-react-scrollable-image-container {
+      max-width: 100%;
+    }
   </style>
 </head>
 <body>
 
-  <!-- 這裡放你的元件 HTML，例如 scrollable image 的容器 -->
+  <!-- dual-channel 元件資料（插在最前面） -->
+  <script>
+    (function() {
+      var namespace = '__twreporterEmbeddedData';
+      var pkg = 'dual-channel';
+      if (typeof window != 'undefined') {
+        if (!window.hasOwnProperty(namespace)) {
+          window[namespace] = {};
+        }
+        if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+          window[namespace][pkg] = [];
+        }
+        if (Array.isArray(window[namespace][pkg])) {
+          var data = {
+            "chapters": [
+              {
+                "id": "2143095237",
+                "label": "puppy",
+                "content": [
+                  {
+                    "id": "chapter-2143095237-section-1",
+                    "content": [
+                      { "type": "header-two", "content": ["puppy"] },
+                      { "type": "header-two", "content": ["黃金獵犬"] },
+                      { "type": "paragraph", "content": ["棒球隊員李喻哲從國二開始接觸棒球，起初因校內沒有合適的場地，他便與同學在學校中庭進行簡易的投球練習，然而，即使找到位置練習，仍需要擔心影響他人，李喻哲回憶道：「生教組長如果看到我們用硬的球，會直接過來沒收。」\n\n此外，他提到，校外場地多半由其他球隊作為比賽用途，而校內又受安全限制，因此一般棒球愛好者在校內外皆難以找到合適的練習場，而陷入兩難處境。（172）"] }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2143095237-section-2",
+                    "content": [
+                      { "type": "header-two", "content": ["杜賓"] },
+                      { "type": "paragraph", "content": ["（這裡可以繼續加其他段落內容）"] }
+                    ]
+                  }
+                ]
+              }
+            ]
+          };
+          window[namespace][pkg].push(data);
+        }
+      }
+    })();
+  </script>
+
+  <!-- 橫著滾吧 scrollable-image 區塊 -->
+  <h1 style="text-align: center;">橫著滾吧！：複合式球場：密集重複運動場域</h1>
+
   <div id="297ab73b-63e0-4a61-be70-4b18d34f8c78"></div>
 
-  <!-- Script 區塊也必須放在 <body> 裡面，或最後 -->
   <script>
     (function() {
       var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
@@ -27,7 +80,9 @@
         if (Array.isArray(window[namespace][pkg])) {
           var data = {
             className: "storytelling-react-scrollable-image-container",
-            imgObjs: [{ url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg" }],
+            imgObjs: [{
+              url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg"
+            }],
             captions: [{
               width: "8.9%", height: "9.42%",
               position: { top: "53.74%", left: "32.11%" },
