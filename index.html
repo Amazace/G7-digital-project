@@ -2,18 +2,61 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
-  <title>我的網站</title>
+  <title>橫著滾吧</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 50px;
-    }
+    /* 這裡放 style 區塊（如你提供的樣式） */
   </style>
 </head>
 <body>
-  <h1>歡迎來到我的網站！</h1>
-  <p>這是我使用 GitHub Pages 建立的第一個網站。</p>
+
+  <!-- 這裡放你的元件 HTML，例如 scrollable image 的容器 -->
+  <div id="297ab73b-63e0-4a61-be70-4b18d34f8c78"></div>
+
+  <!-- Script 區塊也必須放在 <body> 裡面，或最後 -->
+  <script>
+    (function() {
+      var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
+      var pkg = 'scrollable-image';
+      if (typeof window != 'undefined') {
+        if (!window.hasOwnProperty(namespace)) {
+          window[namespace] = {};
+        }
+        if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+          window[namespace][pkg] = [];
+        }
+        if (Array.isArray(window[namespace][pkg])) {
+          var data = {
+            className: "storytelling-react-scrollable-image-container",
+            imgObjs: [{ url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg" }],
+            captions: [{
+              width: "8.9%", height: "9.42%",
+              position: { top: "53.74%", left: "32.11%" },
+              rawContentState: {
+                blocks: [{
+                  key: "ebr7m",
+                  data: { textAlign: "center" },
+                  text: "嘉義某小學",
+                  type: "unstyled",
+                  depth: 0,
+                  entityRanges: [],
+                  inlineStyleRanges: [
+                    { style: "BOLD", length: 5, offset: 0 },
+                    { style: "FONT_COLOR_#FFFFFF", length: 5, offset: 0 },
+                    { style: "BACKGROUND_COLOR_#0000004D", length: 5, offset: 0 }
+                  ]
+                }],
+                entityMap: {}
+              }
+            }],
+            darkMode: false,
+            uuid: "297ab73b-63e0-4a61-be70-4b18d34f8c78"
+          };
+          window[namespace][pkg].push(data);
+        }
+      }
+    })();
+  </script>
+  <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
+
 </body>
 </html>
