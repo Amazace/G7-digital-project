@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <!-- dual-channel 元件資料 -->
+  <!-- dual-channel 元件資料（插在最前面） -->
   <script>
     (function() {
       var namespace = '__twreporterEmbeddedData';
@@ -61,29 +61,27 @@
                 ]
               }
             ],
-            "embeddedItems": [
-              [
-                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/d2ca949c-91bb-4ca9-8609-dbffb32c7470.jpg\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "fadeIn"],
-                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/6472b28f-fe80-4051-bcee-f6d3d68163f9.jpg\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "slideUp"],
-                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/d66c1367-2fc0-4f27-b282-827b33078342.webp\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "fadeIn"]
-              ]
-            ],
-            "isFullWidth": false,
+            "embeddedItems": [],
             "uuid": "1fe51fd6-bb44-4f90-8ce6-9911e0b46713"
           };
           window[namespace][pkg].push(data);
         }
-      })();
+      }
+    })();
   </script>
 
-  <!-- 渲染 dual-channel 區塊 -->
+  <!-- dual-channel 元件容器 -->
   <div id="1fe51fd6-bb44-4f90-8ce6-9911e0b46713"></div>
-  <script type="text/javascript" defer crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
 
-  <!-- scrollable image 區塊 -->
+  <!-- dual-channel 元件腳本 -->
+  <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
+
+  <!-- 橫著滾吧 scrollable-image 區塊 -->
   <h1 style="text-align: center;">橫著滾吧！：複合式球場：密集重複運動場域</h1>
+
   <div id="297ab73b-63e0-4a61-be70-4b18d34f8c78"></div>
 
+  <!-- scrollable-image 載入腳本 -->
   <script>
     (function() {
       var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
@@ -102,8 +100,7 @@
               url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg"
             }],
             captions: [{
-              width: "8.9%",
-              height: "9.42%",
+              width: "8.9%", height: "9.42%",
               position: { top: "53.74%", left: "32.11%" },
               rawContentState: {
                 blocks: [{
@@ -130,6 +127,8 @@
       }
     })();
   </script>
+
+  <!-- scrollable-image 元件腳本 -->
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
 
 </body>
