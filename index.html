@@ -17,20 +17,16 @@
 </head>
 <body>
 
-
-  <!-- dual-channel 容器 -->
-  <div id="dual-channel-container"></div>
-
-  <!-- dual-channel 元件資料（插在最前面） -->
+  <!-- dual-channel 元件資料 -->
   <script>
     (function() {
       var namespace = '__twreporterEmbeddedData';
       var pkg = 'dual-channel';
-      if (typeof window != 'undefined') {
+      if (typeof window !== 'undefined') {
         if (!window.hasOwnProperty(namespace)) {
           window[namespace] = {};
         }
-        if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+        if (!window[namespace].hasOwnProperty(pkg)) {
           window[namespace][pkg] = [];
         }
         if (Array.isArray(window[namespace][pkg])) {
@@ -45,34 +41,58 @@
                     "content": [
                       { "type": "header-two", "content": ["puppy"] },
                       { "type": "header-two", "content": ["黃金獵犬"] },
-                      { "type": "paragraph", "content": ["這是一段測試內容。"] }
+                      { "type": "paragraph", "content": ["棒球隊員李喻哲從國二開始接觸棒球，起初因校內沒有合適的場地，他便與同學在學校中庭進行簡易的投球練習，然而，即使找到位置練習，仍需要擔心影響他人，李喻哲回憶道：「生教組長如果看到我們用硬的球，會直接過來沒收。」\n\n此外，他提到，校外場地多半由其他球隊作為比賽用途，而校內又受安全限制，因此一般棒球愛好者在校內外皆難以找到合適的練習場，而陷入兩難處境。（172）"] }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2143095237-section-2",
+                    "content": [
+                      { "type": "header-two", "content": ["杜賓"] },
+                      { "type": "paragraph", "content": ["國立虎尾高級中學法式滾球社副社長黃妤婕也面臨場地受限的困境。他說明，校內的滾球場為臨時搭建，且缺乏完善規劃，導致地面凹凸不平、雜草叢生等問題層出不窮。加上校方對於冷門運動發展的重視不足，使得平時練習成效不佳，也連帶影響選手比賽時的表現。\n\n黃妤婕補充，碎石地是最適合作為滾球訓練的場地，「如果在水泥地，可能會把地板砸破，或是滾球本身會受損。」可見場地問題不僅影響訓練品質，更成為選手追求成功的絆腳石。（198）"] }
+                    ]
+                  },
+                  {
+                    "id": "chapter-2143095237-section-3",
+                    "content": [
+                      { "type": "header-two", "content": ["科基"] },
+                      { "type": "paragraph", "content": ["「足球最理想的草皮場地，地面是平整的，且草不會過長。」國立臺灣大學男子足球隊副隊長李秉諾說道。回顧過往的求學歷程，練球的場地總是可遇不可求。\n\n高中時，李秉諾會利用標盤、拆卸式足球門等器具，與同儕進行簡易的足球練習。然而，即便有了場地，安全隱憂也讓喜愛足球的學生們難以施展手腳，「五人制水泥地足球場下雨天很危險，容易在碰撞的時候骨折。」李秉諾補充道。（171）"] }
                     ]
                   }
                 ]
               }
-            ]
+            ],
+            "embeddedItems": [
+              [
+                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/d2ca949c-91bb-4ca9-8609-dbffb32c7470.jpg\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "fadeIn"],
+                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/6472b28f-fe80-4051-bcee-f6d3d68163f9.jpg\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "slideUp"],
+                ["<img src=\"https://lab-storytelling-storage.twreporter.org/images/d66c1367-2fc0-4f27-b282-827b33078342.webp\" alt=\"圖片描述\" style=\"max-width: 100%; height: auto;\">\n", "fadeIn"]
+              ]
+            ],
+            "isFullWidth": false,
+            "uuid": "1fe51fd6-bb44-4f90-8ce6-9911e0b46713"
           };
           window[namespace][pkg].push(data);
         }
-      }
-    })();
+      })();
   </script>
 
-  <!-- 橫著滾吧 scrollable-image 區塊 -->
-  <h1 style="text-align: center;">橫著滾吧！：複合式球場：密集重複運動場域</h1>
+  <!-- 渲染 dual-channel 區塊 -->
+  <div id="1fe51fd6-bb44-4f90-8ce6-9911e0b46713"></div>
+  <script type="text/javascript" defer crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
 
+  <!-- scrollable image 區塊 -->
+  <h1 style="text-align: center;">橫著滾吧！：複合式球場：密集重複運動場域</h1>
   <div id="297ab73b-63e0-4a61-be70-4b18d34f8c78"></div>
 
-  <!-- scrollable-image 載入腳本 -->
   <script>
     (function() {
       var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
       var pkg = 'scrollable-image';
-      if (typeof window != 'undefined') {
+      if (typeof window !== 'undefined') {
         if (!window.hasOwnProperty(namespace)) {
           window[namespace] = {};
         }
-        if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+        if (!window[namespace].hasOwnProperty(pkg)) {
           window[namespace][pkg] = [];
         }
         if (Array.isArray(window[namespace][pkg])) {
@@ -82,7 +102,8 @@
               url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg"
             }],
             captions: [{
-              width: "8.9%", height: "9.42%",
+              width: "8.9%",
+              height: "9.42%",
               position: { top: "53.74%", left: "32.11%" },
               rawContentState: {
                 blocks: [{
@@ -109,10 +130,7 @@
       }
     })();
   </script>
-
-  <!-- 套件 JS -->
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
-  <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/dual-channel.js"></script>
 
 </body>
 </html>
