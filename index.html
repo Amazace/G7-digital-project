@@ -76,59 +76,107 @@
   <!-- dual-channel 元件腳本 -->
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
 
-  <!-- 橫著滾吧 scrollable-image 區塊 -->
-  <h1 style="text-align: center;">橫著滾吧！：複合式球場：密集重複運動場域</h1>
+  <!-- 橫著滾吧！：複合式球場：密集重複運動場域 -->
+  <style>
+    /*
+    .storytelling-react-scrollable-image-container {
+      margin-top: -40px;
+    }
+    */
 
-  <div id="297ab73b-63e0-4a61-be70-4b18d34f8c78"></div>
+    /*
+    @media (max-width: 767px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: -3.4vw;
+      }
+    }
 
-  <!-- scrollable-image 載入腳本 -->
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: calc((100vw - 512px)/2 * -1);
+      }
+    }
+
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: calc((100vw - 550px)/2 * -1);
+      }
+    }
+
+    @media (min-width: 1440px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: calc((100vw - 730px)/2 * -1);
+      }
+    }
+    */
+
+    /*
+    @media (max-width: 767px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: -5vw;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .storytelling-react-scrollable-image-container {
+        margin-left: calc((100vw - 700px)/2 * -1);
+      }
+    }
+    */
+  </style>
+    
   <script>
     (function() {
       var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
       var pkg = 'scrollable-image';
-      if (typeof window !== 'undefined') {
+      if (typeof window != 'undefined') {
         if (!window.hasOwnProperty(namespace)) {
           window[namespace] = {};
         }
-        if (!window[namespace].hasOwnProperty(pkg)) {
+        if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
           window[namespace][pkg] = [];
         }
         if (Array.isArray(window[namespace][pkg])) {
           var data = {
-            className: "storytelling-react-scrollable-image-container",
-            imgObjs: [{
-              url: "https://lab-storytelling-storage.twreporter.org/images/50e485a2-457b-49f3-914c-d4c1961e7c69.jpg"
+            "className": "storytelling-react-scrollable-image-container",
+            "imgObjs": [{
+              "url": "https://lab-storytelling-storage.twreporter.org/images/19c0f781-8ed5-4e7a-868f-8153218860c6.jpg"
             }],
-            captions: [{
-              width: "8.9%", height: "9.42%",
-              position: { top: "53.74%", left: "32.11%" },
-              rawContentState: {
-                blocks: [{
-                  key: "ebr7m",
-                  data: { textAlign: "center" },
-                  text: "嘉義某小學",
-                  type: "unstyled",
-                  depth: 0,
-                  entityRanges: [],
-                  inlineStyleRanges: [
-                    { style: "BOLD", length: 5, offset: 0 },
-                    { style: "FONT_COLOR_#FFFFFF", length: 5, offset: 0 },
-                    { style: "BACKGROUND_COLOR_#0000004D", length: 5, offset: 0 }
+            "captions": [{
+              "width": "8.9%",
+              "height": "9.42%",
+              "position": {
+                "top": "53.74%",
+                "left": "32.11%"
+              },
+              "rawContentState": {
+                "blocks": [{
+                  "key": "ebr7m",
+                  "data": { "textAlign": "center" },
+                  "text": "嘉義某小學",
+                  "type": "unstyled",
+                  "depth": 0,
+                  "entityRanges": [],
+                  "inlineStyleRanges": [
+                    { "style": "BOLD", "length": 5, "offset": 0 },
+                    { "style": "FONT_COLOR_#FFFFFF", "length": 5, "offset": 0 },
+                    { "style": "BACKGROUND_COLOR_#0000004D", "length": 5, "offset": 0 }
                   ]
                 }],
-                entityMap: {}
+                "entityMap": {}
               }
             }],
-            darkMode: false,
-            uuid: "297ab73b-63e0-4a61-be70-4b18d34f8c78"
+            "darkMode": false,
+            "minHeight": undefined,
+            "maxHeight": undefined,
+            "uuid": "3d5de3bb-9cdd-48c6-91f6-ac7a88e9ce98"
           };
           window[namespace][pkg].push(data);
         }
       }
-    })();
+    })()
   </script>
-
-  <!-- scrollable-image 元件腳本 -->
+  <div id="3d5de3bb-9cdd-48c6-91f6-ac7a88e9ce98"></div>
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
 
 </body>
