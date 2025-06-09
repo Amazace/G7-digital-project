@@ -111,6 +111,20 @@
 </script>
 <div id="67c2f29d-3c39-45d3-bd53-42eee28c6895"></div>
 <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>  <!-- 面向二 -->
+<script>
+  // 當網頁載入完成後啟動
+  window.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.storytelling-react-scrollable-image-container');
+    if (container) {
+      container.addEventListener('wheel', function (e) {
+        e.preventDefault(); // 防止預設垂直滾動
+        const scrollSpeed = 0.5; // 0.2 表示速度減慢到原來的 20%
+        container.scrollLeft += e.deltaY * scrollSpeed;
+      });
+    }
+  });
+</script>
+
 </div>
   <h1 style="text-align: center; font-size: 40px; margin-top: 40px;">
     運動場改造因地制宜 靈活規劃解空間荒
