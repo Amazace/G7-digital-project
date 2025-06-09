@@ -24,7 +24,7 @@
   <!-- 背景影片 -->
   <div style="position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: -1;">
     <video autoplay loop muted playsinline
-      src="https://lab-storytelling-storage.twreporter.org/files/-------------oOgDDxLEHCKt.mp4"
+      src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E6%9D%8E%E5%B0%88%E9%A1%8C%E5%B0%81%E9%9D%A2.mp4"
       style="width: 100%; height: 100%; object-fit: cover; display: block;">
     </video>
   </div>
@@ -177,6 +177,39 @@
     <p style="font-size: 18px; line-height: 1.8; margin: 20px auto; max-width: 1000px;">
       複合式場地無疑提升了校園運動空間的使用效率，也為學生、民眾提供更多元的運動環境與選擇。然而，這樣的模式能否在台灣廣泛推行，仍面臨諸多挑戰。從經費來源、維護管理，到學生與社區的實際使用狀況，複合式場地的落實不僅是改建的問題，更涉及政策支持與學生運動文化的發展。
     </p>
+    <!-- 複合式場地統計表-->
+    <iframe 
+      title="[ 在此处插入标题 ]" 
+      aria-label="地图" 
+      id="datawrapper-chart-y3roj" 
+      src="https://datawrapper.dwcdn.net/y3roj/1/" 
+      scrolling="no" 
+      frameborder="0" 
+      style="width: 0; min-width: 100% !important; border: none;" 
+      height="858" 
+      data-external="1">
+    </iframe>
+    
+    <!-- 調整 iframe 高度以符合內嵌圖表內容 -->
+    <script type="text/javascript">
+      (function() {
+        "use strict";
+        window.addEventListener("message", function(event) {
+          if (typeof event.data["datawrapper-height"] !== "undefined") {
+            var iframes = document.querySelectorAll("iframe");
+            for (var chartId in event.data["datawrapper-height"]) {
+              for (var i = 0, iframe; iframe = iframes[i]; i++) {
+                if (iframe.contentWindow === event.source) {
+                  var newHeight = event.data["datawrapper-height"][chartId] + "px";
+                  iframe.style.height = newHeight;
+                }
+              }
+            }
+          }
+        });
+      })();
+    </script>
+
   </div>
 </body>
 </html>
