@@ -89,50 +89,55 @@
       font-weight: bold;
       margin-bottom: 0.5rem;
     }
-    .chart-section {
-    background-color: #1e2a38;
-    color: white;
-    padding: 2rem;
-    font-family: 'Noto Sans TC', sans-serif;
-    }
-  
-    .chart-section p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-  
-    .charts-container {
+    
+    .section {
       display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 60px 0;
+      background-color: #1e2a38;
+      padding: 40px;
+      color: white;
       flex-wrap: wrap;
-      gap: 2rem;
+    }
+  
+    .section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+    }
+  
+    .text-block {
+      flex: 1 1 40%;
+      min-width: 280px;
+    }
+  
+    .map-block {
+      flex: 1 1 55%;
+      min-width: 300px;
+      text-align: center;
+    }
+  
+    .chart-pair {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
       justify-content: center;
     }
   
-    .left-chart,
-    .right-charts {
-      flex: 1 1 500px;
-      min-width: 300px;
-    }
-  
-    .right-charts iframe {
-      display: block;
-      margin-bottom: 2rem;
+    .chart-pair iframe {
+      flex: 1;
+      min-width: 260px;
       max-width: 100%;
     }
   
-    iframe {
-      border: none;
-    }
-  
-    @media (max-width: 768px) {
-      .charts-container {
-        flex-direction: column;
-      }
-  
-      .right-charts iframe {
-        margin-bottom: 1.5rem;
-      }
+    .text {
+      flex: 1 1 100%;
+      font-size: 18px;
+      line-height: 1.8;
+      margin-top: 30px;
     }
 
   </style>
@@ -452,32 +457,35 @@
     <div id="2288c012-e811-41b4-9e1d-bf8e2b50ed41"></div>
     <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
   </div>
-  <!-- 複合式場地統計表-->
-<div class="chart-section">
-  <p>
-    現有的球場規劃重複性過高，未能針對青少年身體健康發展在各階段的需求，而校方應思考如何設計更有助於學生運動發展的空間。
-  </p>
-
-  <div class="charts-container">
-    <!-- 地圖 -->
-    <div class="left-chart">
-      <iframe title="各縣市複合式場地分布圖" aria-label="地图" id="datawrapper-chart-uR15q" 
-              src="https://datawrapper.dwcdn.net/uR15q/6/" scrolling="no" 
-              width="100%" height="812" data-external="1"></iframe>
-    </div>
-
-    <!-- 雙層圓環圖 + 柱狀圖 -->
-    <div class="right-charts">
-      <iframe title="複合式場地在台灣本島基層學校占比" aria-label="双层圆环图" id="datawrapper-chart-dYXoI" 
-              src="https://datawrapper.dwcdn.net/dYXoI/2/" scrolling="no" 
-              width="100%" height="445" data-external="1"></iframe>
-
-      <iframe title="複合場地稀有、配置集中，PU跑道仍為主流" aria-label="柱形图" id="datawrapper-chart-iMIC6" 
-              src="https://datawrapper.dwcdn.net/iMIC6/1/" scrolling="no" 
-              width="100%" height="450" data-external="1"></iframe>
-    </div>
+  <!-- 第一區塊：左文字、右地圖圖表 -->
+<div class="section">
+  <div class="text-block">
+    <p>台灣對於複合式場地的建設與多元運動空間的推廣仍不普及⋯⋯</p>
+  </div>
+  <div class="map-block">
+    <iframe title="各縣市複合式場地分布圖" aria-label="地图" id="datawrapper-chart-uR15q"
+      src="https://datawrapper.dwcdn.net/uR15q/6/" scrolling="no" frameborder="0"
+      style="border: none;" width="550" height="812" data-external="1"></iframe>
   </div>
 </div>
+
+<!-- 第二區塊：左兩圖表、右文字說明 -->
+<div class="section">
+  <div class="chart-pair">
+    <iframe title="複合式場地在台灣本島基層學校占比" aria-label="双层圆环图"
+      src="https://datawrapper.dwcdn.net/dYXoI/2/" scrolling="no" frameborder="0"
+      style="border: none;" width="260" height="445" data-external="1"></iframe>
+
+    <iframe title="複合場地稀有、配置集中，PU跑道仍為主流" aria-label="柱形图"
+      src="https://datawrapper.dwcdn.net/iMIC6/1/" scrolling="no" frameborder="0"
+      style="border: none;" width="260" height="450" data-external="1"></iframe>
+  </div>
+
+  <div class="text">
+    <p>由圖可見，複合式場地在校園空間中仍屬少數，且分布集中於特定縣市⋯⋯</p>
+  </div>
+</div>
+
 <!--對話框-->
 <section class="interview-section">
   <div class="speech-bubble left reveal">
