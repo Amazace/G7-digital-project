@@ -22,6 +22,35 @@
       max-width: 100%;
     }
 
+     .collapsible-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.8s ease;
+    }
+  
+    .collapsible-content.open {
+      max-height: 1500px; /* 根據影片內容長度可調整 */
+    }
+  
+    .button-container {
+      text-align: center;
+      margin: 2rem 0;
+    }
+  
+    button {
+      padding: 10px 18px;
+      font-size: 16px;
+      margin: 0 10px;
+      border: none;
+      background-color: #0057a0;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #003f7f;
+    }
     .interview-section {
       display: flex;
       flex-direction: column;
@@ -275,39 +304,6 @@
     <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
   </div>
 </div>
-
-<!-- 💅 樣式與 JS 控制 -->
-<style>
-  .collapsible-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.8s ease;
-  }
-
-  .collapsible-content.open {
-    max-height: 1500px; /* 根據影片內容長度可調整 */
-  }
-
-  .button-container {
-    text-align: center;
-    margin: 2rem 0;
-  }
-
-  button {
-    padding: 10px 18px;
-    font-size: 16px;
-    margin: 0 10px;
-    border: none;
-    background-color: #0057a0;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: #003f7f;
-  }
-</style>
 
 <script>
   function openVideo() {
