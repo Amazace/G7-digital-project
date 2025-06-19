@@ -29,7 +29,7 @@
     }
   
     .collapsible-content.open {
-      max-height: 8000;
+      max-height: 8000px;
     }
   
     .button-container {
@@ -285,10 +285,9 @@
     <div id="0b3c18d3-ac8c-4f34-bd3c-9240c361596a"></div>
     <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
   </div>
-</div>
-
-<div class="button-container">
-  <button onclick="closeVideo1()">✕ 關閉捲動式影片</button>
+  <div class="button-container" id="video-end-button" style="display: none;">
+    <button onclick="closeVideo1()">✕ 關閉捲動式影片</button>
+  </div>
 </div>
 
 <script>
@@ -300,6 +299,24 @@
   function closeVideo1() {
     document.getElementById("videoSection").classList.remove("open");
   }
+</script>
+<script>
+  const scrollableDuration = 8.256; // 影片長度（秒）
+  const secondsPer100vh = 2.5;      // 你的設定值
+  const scrollThreshold = scrollableDuration / secondsPer100vh; // 約 3.3
+
+  window.addEventListener('scroll', () => {
+    const scrollProgress = window.scrollY / window.innerHeight;
+
+    const endButton = document.getElementById('video-end-button');
+    if (!endButton) return;
+
+    if (scrollProgress >= scrollThreshold) {
+      endButton.style.display = 'block';
+    } else {
+      endButton.style.display = 'none';
+    }
+  });
 </script>
  <!-- 面向三：左右互搏-->
 <div style="position: relative; height: 200vh">
