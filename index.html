@@ -207,7 +207,7 @@
 <div id=e8ac8433-34e7-4714-94f7-c9cc704f3cba></div>
 
 <script type="text/javascript" crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script><h1 style="text-align: center; font-size: 24px; margin-top: 40px;">
-</h1>
+<h1 style="text-align: center; font-size: 40px; margin-top: 40px;">  
   空間規劃不善難容多樣運動
 </h1>
 <p style="font-size: 18px; line-height: 1.8; margin: 20px auto; max-width: 1000px;">
@@ -362,6 +362,16 @@
 <div class="button-container">
   <button onclick="closeVideo1()">✕ 關閉捲動式影片</button>
 </div>
+<script>
+  function openVideo1() {
+    document.getElementById("videoSection").classList.add("open");
+    document.getElementById("videoSection").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function closeVideo1() {
+    document.getElementById("videoSection").classList.remove("open");
+  }
+</script>
 
 <div class="button-container">
   <button onclick="openVideo2()">▶ 觀看捲動式影片</button>
@@ -370,6 +380,16 @@
 <div class="button-container">
   <button onclick="closeVideo2()">✕ 關閉捲動式影片</button>
 </div>
+<script>
+  function openVideo2() {
+    document.getElementById("videoSection").classList.add("open");
+    document.getElementById("videoSection").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function closeVideo2() {
+    document.getElementById("videoSection").classList.remove("open");
+  }
+</script>
 
 <div class="button-container">
   <button onclick="openVideo3()">▶ 觀看捲動式影片</button>
@@ -380,12 +400,12 @@
 </div>
 
 <script>
-  function openVideo() {
+  function openVideo3() {
     document.getElementById("videoSection").classList.add("open");
     document.getElementById("videoSection").scrollIntoView({ behavior: "smooth" });
   }
 
-  function closeVideo() {
+  function closeVideo3() {
     document.getElementById("videoSection").classList.remove("open");
   }
 </script>
