@@ -26,11 +26,9 @@
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.8s ease;
-      display: none;
     }
   
     .collapsible-content.open {
-      display: block;
       max-height: 8000;
     }
   
@@ -363,6 +361,7 @@
 <div class="button-container">
   <button onclick="closeVideo1()">✕ 關閉捲動式影片</button>
 </div>
+
 <script>
   function openVideo1() {
     document.getElementById("videoSection").classList.add("open");
