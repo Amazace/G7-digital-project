@@ -65,56 +65,53 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 50vh; /* 半個螢幕高度 */
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 40px;
+      padding-top: 50vh;
       margin: 60px 0;
       background-color: #323D4D;
-      padding: 40px;
       color: white;
+        }
+    
+    .block-center {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 30px 0;
+    }
+    
+    .block-pair {
+      display: flex;
+      justify-content: center;
       flex-wrap: wrap;
+      gap: 30px;
+      width: 100%;
+      margin: 30px 0;
     }
-  
-    .section p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 0;
-    }
-  
-    .text-block {
-      flex: 1 1 40%;
-      min-width: 280px;
+    
+    .text,
+    .text-block,
+    .map-block,
+    .chart-pair {
       max-width: 1000px;
     }
-  
-    .map-block {
-      flex: 1 1 55%;
-      min-width: 300px;
-      max-width: 1000px;
-      text-align: center;
-    }
-  
+    
     .chart-pair {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      width: 90%;
       justify-content: center;
+      width: 100%;
     }
-  
+    
     .chart-pair iframe {
       flex: 1;
       min-width: 260px;
       max-width: 90%;
     }
-  
-    .text {
-      flex: 1 1 100%;
+    
+    .text, .text-block p {
       font-size: 18px;
       line-height: 1.8;
-      margin-top: 30px;
-      max-width: 1000px;
+      margin: 0;
     }
     
     .fade-in {
@@ -127,7 +124,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-
   </style>
 </head>
 <body>
@@ -316,7 +312,7 @@
 
   <!--背景圖-->
   <div style="
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
@@ -438,33 +434,36 @@
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
 </div>
 <!-- 數據區塊：左右圖表 -->
-<div class="section" style="display: flex; justify-content: center;">
-  <div class="text fade-in">
-    <p>台灣對於複合式場地的建設與多元運動空間的推廣仍不普及。目前，校園運動場仍以PU跑道等單一功能設施為主流，雖然維護相對容易，但建設成本高昂且汰換率高，難以滿足學生多元的運動需求。「這個東西很難用金錢價值去衡量它。」李秉諾表達他的看法，他認為如果鋪設複合式場地能改善校園運動安全、營造提升運動風氣，甚至提高競技水準，長遠來看絕對是值得的投資。</p>
+<div class="section">
+  <div class="block-center fade-in">
+    <div class="text">
+      <p>台灣對於複合式場地的建設與多元運動空間的推廣仍不普及。目前，校園運動場仍以PU跑道等單一功能設施為主流，雖然維護相對容易，但建設成本高昂且汰換率高，難以滿足學生多元的運動需求。「這個東西很難用金錢價值去衡量它。」李秉諾表達他的看法，他認為如果鋪設複合式場地能改善校園運動安全、營造提升運動風氣，甚至提高競技水準，長遠來看絕對是值得的投資。</p>
+    </div>
   </div>
-  <div class="chart-pair fade-in">
-    <iframe title="複合式場地在台灣本島基層學校占比" aria-label="双层圆环图"
-      src="https://datawrapper.dwcdn.net/dYXoI/2/" scrolling="no" frameborder="0"
-      style="border: none;" width="260" height="500" data-external="1"></iframe>
-
-    <iframe title="複合場地稀有、配置集中，PU跑道仍為主流" aria-label="柱形图"
-      src="https://datawrapper.dwcdn.net/iMIC6/1/" scrolling="no" frameborder="0"
-      style="border: none;" width="260" height="450" data-external="1"></iframe>
+  <div class="block-center fade-in">
+    <div class="chart-pair">
+      <iframe title="複合式場地在台灣本島基層學校占比" aria-label="双层圆环图"
+        src="https://datawrapper.dwcdn.net/dYXoI/2/" scrolling="no" frameborder="0"
+        style="border: none;" width="260" height="500" data-external="1"></iframe>
+  
+      <iframe title="複合場地稀有、配置集中，PU跑道仍為主流" aria-label="柱形图"
+        src="https://datawrapper.dwcdn.net/iMIC6/1/" scrolling="no" frameborder="0"
+        style="border: none;" width="260" height="450" data-external="1"></iframe>
+    </div>
   </div>
-
-<!-- 數據區塊：地圖-->
-  <div class="text-block fade-in" style="display: flex;">
-    <p>為了調查台灣本島複合式球場的數量、場地組合類型與縣市分布情形，本報記者透過Google 地圖、實地訪查蒐集數據，將場地數據以資訊圖表呈現出來。數據顯示，在本島基層學校中，一共有165座複合式球場，僅占本島學校中的4.4％（3734所學校）。
-
-台東縣因棒球風氣盛行，孕育許多職棒好手，當地學校也興建了許多非正規棒球場。台南市於2014年由虎山國小推動「草地操場聯盟」以草地取代傳統場地，並吸引全市21所學校加入。台北地區則設有河濱公園棒球場，學校較少設置複合式球場以滿足需求。總體來看，除台東與台南外，台灣各地的學校場地仍以傳統操場為主，複合式場地數量仍舊稀少。</p>
-  </div>
-  <div class="map-block fade-in">
-    <iframe title="各縣市複合式場地分布圖" aria-label="地图" id="datawrapper-chart-uR15q"
-      src="https://datawrapper.dwcdn.net/uR15q/6/" scrolling="no" frameborder="0"
-      style="border: none;" width="550" height="812" data-external="1"></iframe>
+  <!-- 數據區塊：地圖-->
+  <div class="block-pair fade-in">
+    <div class="text-block">
+      <p>為了調查台灣本島複合式球場的數量、場地組合類型與縣市分布情形，本報記者透過Google 地圖、實地訪查蒐集數據，將場地數據以資訊圖表呈現出來。數據顯示，在本島基層學校中，一共有165座複合式球場，僅占本島學校中的4.4％（3734所學校）。</p>
+      <p>台東縣因棒球風氣盛行，孕育許多職棒好手，當地學校也興建了許多非正規棒球場。台南市於2014年由虎山國小推動「草地操場聯盟」以草地取代傳統場地，並吸引全市21所學校加入。台北地區則設有河濱公園棒球場，學校較少設置複合式球場以滿足需求。總體來看，除台東與台南外，台灣各地的學校場地仍以傳統操場為主，複合式場地數量仍舊稀少。</p>
+    </div>
+    <div class="map-block fade-in">
+      <iframe title="各縣市複合式場地分布圖" aria-label="地图" id="datawrapper-chart-uR15q"
+        src="https://datawrapper.dwcdn.net/uR15q/6/" scrolling="no" frameborder="0"
+        style="border: none;" width="550" height="812" data-external="1"></iframe>
+    </div>
   </div>
 </div>
-
 <!-- 浮現動畫觸發功能-->
 <script>
   const observer = new IntersectionObserver((entries) => {
