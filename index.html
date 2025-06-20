@@ -22,43 +22,72 @@
       max-width: 100%;
     }
 
-    .interview-section {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      margin: 100px auto;
-      width: 90%;
-      max-width: 800px;
+     body {
+      background-color: #2a3b4c;
+      font-family: sans-serif;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      position: relative;
     }
-    
-    .speech-bubble {
-      padding: 1.2rem;
+
+    .dialog-box {
+      background-color: #ccc;
+      color: black;
       border-radius: 20px;
-      background: #e6f4f1;
-      max-width: 75%;
-      opacity: 0;
-      transform: translateY(50px);
-      transition: all 0.6s ease-out;
+      padding: 20px;
+      width: 420px;
+      position: absolute;
     }
-    
-    .speech-bubble.left {
-      align-self: flex-start;
-      background-color: #dbeaff;
-    }
-    
-    .speech-bubble.right {
-      align-self: flex-end;
-      background-color: #e6dfff;
-    }
-    
-    .speech-bubble.reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .name {
+
+    .face {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-weight: bold;
-      margin-bottom: 0.5rem;
+      color: black;
+      position: absolute;
+    }
+
+    .face img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* 吳柏翰區塊 */
+    #wu-box {
+      top: 20px;
+      left: 160px;
+    }
+    #wu-face {
+      top: 100px;
+      left: 40px;
+    }
+
+    /* 徐正賢區塊 */
+    #hsu-box {
+      top: 200px;
+      right: 100px;
+    }
+    #hsu-face {
+      top: 300px;
+      right: 30px;
+    }
+
+    /* 劉坤祐區塊 */
+    #liu-box {
+      bottom: 40px;
+      left: 120px;
+    }
+    #liu-face {
+      bottom: 60px;
+      left: 20px;
     }
     
     .section {
@@ -463,8 +492,7 @@
     <div class="text-block">
       <p>為了調查台灣本島複合式球場的數量、場地組合類型與縣市分布情形，本報記者透過Google 地圖、實地訪查蒐集數據。數據顯示，在本島基層學校中，一共有165座複合式球場，僅占本島學校中的4.4％（3734所學校）。其中，台東縣與台南市分別位居一、二。而在北部地區的複合式場地則相對稀少。</p>
       <div style="height: 2em;"></div>
-      <strong>各縣市複合式球場發展背景差異顯著<strong> 
-      <p>。台東縣因棒球風氣盛行，孕育許多職棒好手，當地學校也因此興建許多非正規棒球場；台南市則於2014年由台南市虎山實驗小學推動「草地操場聯盟」，以草地取代傳統場地，吸引全市21所學校響應。相較之下，台北地區因設有河濱公園棒球場等公共設施，學校較少設置複合式球場。綜觀全台，除台東與台南外，各地的學校場地仍以傳統操場為主。
+        <strong>各縣市複合式球場發展背景差異顯著<strong> <p>。台東縣因棒球風氣盛行，孕育許多職棒好手，當地學校也因此興建許多非正規棒球場；台南市則於2014年由台南市虎山實驗小學推動「草地操場聯盟」，以草地取代傳統場地，吸引全市21所學校響應。相較之下，台北地區因設有河濱公園棒球場等公共設施，學校較少設置複合式球場。綜觀全台，除台東與台南外，各地的學校場地仍以傳統操場為主。
       </p>
     </div>
     <div class="map-block fade-in">
