@@ -295,53 +295,60 @@
   <div id="3838baca-b5dd-4d43-acb2-ce4d4dde1976"></div>
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
 </div>
-<!-- 面向三 -->
-<div style="position: relative; height: 200vh">
 
-  <!-- 背景圖片-->
-  <div style="position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: 0;">
+
+<div style="position: relative; height: 200vh;">
+
+  <!--背景圖-->
+  <div style="
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;">
     <img
-    src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/dji_fly_20250530_161242_0191_1748592646217_photo.jpg"
-    style="width: 100%; height: 100%; object-fit: cover; display: block;">
+      src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/dji_fly_20250530_161242_0191_1748592646217_photo.jpg"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <!-- ✅ 外層容器：用來包住遮罩與文字 -->
-  <div style="position: relative; margin-top: 100vh;">
+  <!-- 🔲 遮罩 + 文字層 -->
+  <div style="
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;">
+    
+    <!-- 外框文字容器：位置會控制遮罩、文字同步出現 -->
+    <div style="position: relative; width: 100%; max-width: 1000px; padding: 60px 40px; box-sizing: border-box; color: white;">
 
-    <!-- ✅ 遮罩：覆蓋這個容器（高度會隨文字內容自動適應） -->
-    <div style="
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 1200px;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      z-index: 1;
-      pointer-events: none;">
-    </div>
-
-    <!-- ✅ 文字層 -->
-    <div style="
-      position: relative;
-      z-index: 2;
-      padding: 60px 40px;
-      box-sizing: border-box;
-      color: white;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;">
-
-      <h1 style="font-size: 48px;">
-        PU跑道稱霸校園多年 費用、學生健康成隱憂
-      </h1>
-      <div style="max-width: 800px; text-align: left; font-size: 20px; line-height: 1.8; margin-top: 50px;">
-        「我們不應該把每一個操場都變成PU或人工草，這是不對的。」台灣運動產業協會理事長徐正賢說。他指出，許多學校仍以傳統跑道為主，雖滿足跑步與體育課程需求，但對於足球、棒球等需要草地的運動並不理想，甚至可能影響安全。
+      <!-- 🔳 半透明黑色遮罩 -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        pointer-events: none;">
       </div>
-      <div style="max-width: 800px; text-align: left; font-size: 20px; line-height: 1.8; margin-top: 50px;">
-        而複合式場地最顯著的優點在於提高運動空間的使用率與多樣性，徐正賢也說道：「在草地（複合式場地）上你要踢足球、打手球、玩田徑，或者打棒球都可以。」他表示，校方應更靈活規劃現有操場，如設置天然草皮跑道或圍網來提供適合不同運動的場地。
+
+      <!-- ✏️ 文字內容 -->
+      <div style="position: relative; z-index: 2; text-align: center;">
+        <h1 style="font-size: 48px; text-shadow: 2px 2px 6px rgba(0,0,0,0.6);">
+          PU跑道稱霸校園多年 費用、學生健康成隱憂
+        </h1>
+        <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
+          「我們不應該把每一個操場都變成PU或人工草，這是不對的。」台灣運動產業協會理事長徐正賢說。他指出，許多學校仍以傳統跑道為主，雖滿足跑步與體育課程需求，但對於足球、棒球等需要草地的運動並不理想，甚至可能影響安全。
+        </div>
+        <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
+          而複合式場地最顯著的優點在於提高運動空間的使用率與多樣性，徐正賢也說道：「在草地（複合式場地）上你要踢足球、打手球、玩田徑，或者打棒球都可以。」他表示，校方應更靈活規劃現有操場，如設置天然草皮跑道或圍網來提供適合不同運動的場地。
+        </div>
       </div>
     </div>
   </div>
