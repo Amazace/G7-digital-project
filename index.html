@@ -342,117 +342,70 @@
 </div>
   
 <!-- 圖片田字區塊 -->
-<div style=height: 100vh; display: flex; justify-content: center; align-items: center;>
-  
-  <h1 style="font-size: 42px; text align: center;">
-   探索更多複合式球場吧！
-  </h1>
-  
+<div style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1 style="font-size: 42px;">探索更多複合式球場吧！</h1>
+
   <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1000px; margin: 0 auto;">
-    <!-- 第 1 張 -->
     <div id="cb04d8a5-daa1-47e6-9b03-be87c20f0928"></div>
-    <script>
-      (function () {
-        var namespace = '__twreporterEmbeddedData'
-        var packageName = 'zoom-in'
-        if (!window[namespace]) { window[namespace] = {} }
-        if (!window[namespace][packageName]) { window[namespace][packageName] = [] }
-        var data = {
-          "uuid": "cb04d8a5-daa1-47e6-9b03-be87c20f0928",
-          "data": {
-            "src": "https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%A4%A7%E5%9C%96\u002F%E9%BC%93%E5%B2%A9%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG",
-            "alt": "圖1說明",
-            "caption": "圖說1",
-            "theme": {
-              "desktop": {
-                "overlay": { "background": "#fff", "opacity": 1 }
-              }
-            }
-          }
-        }
-        window[namespace][packageName].push(data)
-      })()
-    </script>
-  
-    <!-- 第 2 張 -->
     <div id="da9970f0-e817-4fcc-825b-ca7379128d82"></div>
-    <script>
-      (function () {
-        var namespace = '__twreporterEmbeddedData'
-        var packageName = 'zoom-in'
-        if (!window[namespace]) { window[namespace] = {} }
-        if (!window[namespace][packageName]) { window[namespace][packageName] = [] }
-        var data = {
-          "uuid": "da9970f0-e817-4fcc-825b-ca7379128d82",
-          "data": {
-            "src": "https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%A4%A7%E5%9C%96\u002F%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-12.JPG",
-            "alt": "圖2說明",
-            "caption": "圖說2",
-            "theme": {
-              "desktop": {
-                "overlay": { "background": "#fff", "opacity": 1 }
-              }
-            }
-          }
-        }
-        window[namespace][packageName].push(data)
-      })()
-    </script>
-  
-    <!-- 第 3 張 -->
     <div id="870fdd63-7614-4b20-a879-4551d5863bd1"></div>
-    <script>
-      (function () {
-        var namespace = '__twreporterEmbeddedData'
-        var packageName = 'zoom-in'
-        if (!window[namespace]) { window[namespace] = {} }
-        if (!window[namespace][packageName]) { window[namespace][packageName] = [] }
-        var data = {
-          "uuid": "870fdd63-7614-4b20-a879-4551d5863bd1",
-          "data": {
-            "src": "https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%A4%A7%E5%9C%96\u002F%E5%85%B5%E5%BA%AB%E7%B8%A3%E8%B1%90%E5%B2%A1%E5%B8%82%E7%AB%8B%E6%97%A5%E9%AB%98%E5%B0%8F%E5%AD%B8.jpg",
-            "alt": "圖3說明",
-            "caption": "圖說3",
-            "theme": {
-              "desktop": {
-                "overlay": { "background": "#fff", "opacity": 1 }
-              }
-            }
-          }
-        }
-        window[namespace][packageName].push(data)
-      })()
-    </script>
-  
-    <!-- 第 4 張 -->
     <div id="2b9710f0-5efd-431d-9edd-25dfe3fc9f51"></div>
-    <script>
-      (function () {
-        var namespace = '__twreporterEmbeddedData'
-        var packageName = 'zoom-in'
-        if (!window[namespace]) { window[namespace] = {} }
-        if (!window[namespace][packageName]) { window[namespace][packageName] = [] }
-        var data = {
-          "uuid": "2b9710f0-5efd-431d-9edd-25dfe3fc9f51",
-          "data": {
-            "src": "https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%A4%A7%E5%9C%96\u002F%E5%85%AC%E5%9C%92%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG",
-            "alt": "圖4說明",
-            "caption": "圖說4",
-            "theme": {
-              "desktop": {
-                "overlay": { "background": "#fff", "opacity": 1 }
+  </div>
+
+  <!-- 📦 Zoom-in script & 一次性註冊所有圖片 -->
+  <script src="https://unpkg.com/@twreporter/zoom-in@0.1.0-rc.1/dist/main-5bf5b84207d58e6d3db0.bundle.js"></script>
+  <script>
+    (function () {
+      const namespace = '__twreporterEmbeddedData'
+      const packageName = 'zoom-in'
+      if (!window[namespace]) window[namespace] = {}
+      if (!window[namespace][packageName]) window[namespace][packageName] = []
+
+      const images = [
+        {
+          uuid: 'cb04d8a5-daa1-47e6-9b03-be87c20f0928',
+          src: 'https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/鼓岩國小棒球場-9.JPG',
+          alt: '圖1說明',
+          caption: '圖說1'
+        },
+        {
+          uuid: 'da9970f0-e817-4fcc-825b-ca7379128d82',
+          src: 'https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/鼓山國小棒球場-12.JPG',
+          alt: '圖2說明',
+          caption: '圖說2'
+        },
+        {
+          uuid: '870fdd63-7614-4b20-a879-4551d5863bd1',
+          src: 'https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/兵庫縣豐岡市立日高中小學.jpg',
+          alt: '圖3說明',
+          caption: '圖說3'
+        },
+        {
+          uuid: '2b9710f0-5efd-431d-9edd-25dfe3fc9f51',
+          src: 'https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/公園國小棒球場-9.JPG',
+          alt: '圖4說明',
+          caption: '圖說4'
+        }
+      ]
+
+      images.forEach(img => {
+        window[namespace][packageName].push({
+          uuid: img.uuid,
+          data: {
+            src: img.src,
+            alt: img.alt,
+            caption: img.caption,
+            theme: {
+              desktop: {
+                overlay: { background: '#fff', opacity: 1 }
               }
             }
           }
-        }
-        window[namespace][packageName].push(data)
-      })()
-    </script>
-  
-  </div>
-  
-  <!-- 📦 引入 Zoom-in 套件（只引入一次） -->
-  <script src="https://unpkg.com/@twreporter/zoom-in@0.1.0-rc.1/dist/main-5bf5b84207d58e6d3db0.bundle.js"></script>
+        })
+      })
+    })()
+  </script>
+</div>
 
 <div style="position: relative; height: 250vh;">
 
