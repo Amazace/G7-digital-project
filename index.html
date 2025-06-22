@@ -49,7 +49,30 @@
     .image-card:hover img {
       transform: scale(1.05);
     }
+
+    /* 字卡遮罩樣式 */
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      padding: 20px;
+    }
   
+    .image-card:hover .overlay {
+      opacity: 1;
+    }
+  
+      
     /* 全畫面放大圖片樣式 */
     .fullscreen-overlay {
       position: fixed;
@@ -395,7 +418,7 @@
 
 <!-- 圖片區塊容器 -->
 <div style="padding: 60px 0; background-color: #323D4D;">
-  <h1 style="font-size: 42px; color: white; text-align: center; margin-bottom: 40px;">
+  <h1 style="font-size: 28px; color: white; text-align: center; margin-bottom: 60px;">
     探索更多複合式球場吧！
   </h1>
 
@@ -403,21 +426,25 @@
     <!-- 第 1 張 -->
     <div class="image-card">
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E9%BC%93%E5%B2%A9%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG" alt="圖片1" />
+      <div class="overlay">｜高雄鼓岩國小　草地＋紅土｜</div>
     </div>
 
     <!-- 第 2 張 -->
     <div class="image-card">
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-12.JPG" alt="圖片2" />
+      <div class="overlay">｜高雄鼓山國小　PU＋草地＋紅土｜</div>
     </div>
 
     <!-- 第 3 張 -->
     <div class="image-card">
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E5%85%B5%E5%BA%AB%E7%B8%A3%E8%B1%90%E5%B2%A1%E5%B8%82%E7%AB%8B%E6%97%A5%E9%AB%98%E5%B0%8F%E5%AD%B8.jpg" alt="圖片3" />
+      <div class="overlay">｜日本兵庫縣日高小學　校庭｜</div>
     </div>
 
     <!-- 第 4 張 -->
     <div class="image-card">
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E5%85%AC%E5%9C%92%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG" alt="圖片4" />
+       <div class="overlay">｜台南公園國小　紅土跑道｜</div>
     </div>
   </div>
 </div>
@@ -559,6 +586,8 @@
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%8A%89%E5%9D%A4%E7%A5%90-Photoroom.png" alt="劉坤祐">
     </div>
   </div>
+  <!--徐正賢-->
+  
   <!-- 捲動式影片：捲動式影片：建中 -->
   <div id="gmjoj">  
     <script>
