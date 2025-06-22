@@ -23,6 +23,58 @@
       max-width: 100%;
     }
 
+    .image-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .image-card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      border-radius: 8px;
+    }
+  
+    .image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+  
+    .image-card:hover img {
+      transform: scale(1.05);
+    }
+  
+    /* 全畫面放大圖片樣式 */
+    .fullscreen-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+  
+    .fullscreen-overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    }
+  
+    .fullscreen-overlay.active {
+      display: flex;
+    }
+
     .dialog-section {
       position: relative; 
       min-height: 600px;   /* 可依實際需求調整高度 */
@@ -340,98 +392,60 @@
   <div id="3838baca-b5dd-4d43-acb2-ce4d4dde1976"></div>
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
 </div>
-  
+
 <!-- 圖片區塊容器 -->
 <div style="padding: 60px 0; background-color: #323D4D;">
   <h1 style="font-size: 42px; color: white; text-align: center; margin-bottom: 40px;">
     探索更多複合式球場吧！
   </h1>
 
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; max-width: 1000px; margin: 0 auto;">
+  <div class="image-grid">
     <!-- 第 1 張 -->
-    <div id="cb04"></div>
-    <script>
-      (function () {
-        const ns = '__twreporterEmbeddedData', pkg = 'zoom-in';
-        window[ns] = window[ns] || {};
-        window[ns][pkg] = window[ns][pkg] || [];
-        window[ns][pkg].push({
-          uuid: "cb04",
-          data: {
-            src: "https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/鼓岩國小棒球場-9.JPG",
-            alt: "鼓岩國小球場",
-            caption: "鼓岩國小棒球場",
-            theme: { desktop: { overlay: { background: "#fff", opacity: 1 } } }
-          }
-        });
-      })();
-    </script>
+    <div class="image-card">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E9%BC%93%E5%B2%A9%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG" alt="圖片1" />
+    </div>
 
     <!-- 第 2 張 -->
-    <div id="da99"></div>
-    <script>
-      (function () {
-        const ns = '__twreporterEmbeddedData', pkg = 'zoom-in';
-        window[ns] = window[ns] || {};
-        window[ns][pkg] = window[ns][pkg] || [];
-        window[ns][pkg].push({
-          uuid: "da99",
-          data: {
-            src: "https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/鼓山國小棒球場-12.JPG",
-            alt: "鼓山國小球場",
-            caption: "鼓山國小棒球場",
-            theme: { desktop: { overlay: { background: "#fff", opacity: 1 } } }
-          }
-        });
-      })();
-    </script>
+    <div class="image-card">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E9%BC%93%E5%B1%B1%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-12.JPG" alt="圖片2" />
+    </div>
 
     <!-- 第 3 張 -->
-    <div id="870f"></div>
-    <script>
-      (function () {
-        const ns = '__twreporterEmbeddedData', pkg = 'zoom-in';
-        window[ns] = window[ns] || {};
-        window[ns][pkg] = window[ns][pkg] || [];
-        window[ns][pkg].push({
-          uuid: "870f",
-          data: {
-            src: "https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/兵庫縣豐岡市立日高中學.jpg",
-            alt: "兵庫縣日高中學",
-            caption: "兵庫縣豐岡市立日高中學",
-            theme: { desktop: { overlay: { background: "#fff", opacity: 1 } } }
-          }
-        });
-      })();
-    </script>
+    <div class="image-card">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E5%85%B5%E5%BA%AB%E7%B8%A3%E8%B1%90%E5%B2%A1%E5%B8%82%E7%AB%8B%E6%97%A5%E9%AB%98%E5%B0%8F%E5%AD%B8.jpg" alt="圖片3" />
+    </div>
 
     <!-- 第 4 張 -->
-    <div id="2b97"></div>
-    <script>
-      (function () {
-        const ns = '__twreporterEmbeddedData', pkg = 'zoom-in';
-        window[ns] = window[ns] || {};
-        window[ns][pkg] = window[ns][pkg] || [];
-        window[ns][pkg].push({
-          uuid: "2b97",
-          data: {
-            src: "https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/大圖/公園國小棒球場-9.JPG",
-            alt: "公園國小球場",
-            caption: "公園國小棒球場",
-            theme: { desktop: { overlay: { background: "#fff", opacity: 1 } } }
-          }
-        });
-      })();
-    </script>
+    <div class="image-card">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%A4%A7%E5%9C%96/%E5%85%AC%E5%9C%92%E5%9C%8B%E5%B0%8F%E6%A3%92%E7%90%83%E5%A0%B4-9.JPG" alt="圖片4" />
+    </div>
   </div>
 </div>
 
-<!-- 📦 引入 Zoom-in 套件（請只放一次，建議放在 body 結尾） -->
-<script src="https://unpkg.com/@twreporter/zoom-in@0.1.0-rc.1/dist/main-5bf5b84207d58e6d3db0.bundle.js"></script>
+<!-- 全畫面圖片放大區塊 -->
+<div class="fullscreen-overlay" id="fullscreenOverlay">
+  <img id="fullscreenImage" src="" alt="放大圖" />
+</div>
 
-  
-<div style="position: relative; height: 250vh;">
+<script>
+  const imageCards = document.querySelectorAll(".image-card img");
+  const overlay = document.getElementById("fullscreenOverlay");
+  const fullscreenImage = document.getElementById("fullscreenImage");
 
+  imageCards.forEach((img) => {
+    img.addEventListener("click", () => {
+      fullscreenImage.src = img.src;
+      overlay.classList.add("active");
+    });
+  });
+
+  overlay.addEventListener("click", () => {
+    overlay.classList.remove("active");
+    fullscreenImage.src = "";
+  });
+</script>
+
+<div style="position: relative; height: 250vh;"> 
   <!--背景圖-->
   <div style="
     position: sticky;
