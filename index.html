@@ -303,11 +303,14 @@
 
 <script type="text/javascript" crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>  
 
-<h1 style="text-align: center; font-size: 40px; margin-top: 40px;">  
-  空間規劃不善難容多樣運動
-</h1>
-<p style="font-size: 18px; line-height: 1.8; margin: 20px auto; max-width: 1000px;">
-  這些學生的經歷皆說明，台灣在校園運動空間規劃上的缺失。大部分學校礙於空間限制，難以針對不同運動項目，各別建立球場。再者，安全性、熱門程度、課程規劃等考量，使PU跑道、水泥球場成為多數校方的選擇，大幅限縮其他運動的發展空間。面對這樣的困境，複合式場地的概念應運而生，成為解決空間侷限的新途徑。  </p>
+<div style="position: relative; height: 50vh;">
+  <h1 style="text-align: center; font-size: 40px; margin-top: 40px;">  
+    空間規劃不善難容多樣運動
+  </h1>
+  <p style="font-size: 18px; line-height: 1.8; margin: 20px auto; max-width: 1000px;">
+    這些學生的經歷皆說明，台灣在校園運動空間規劃上的缺失。大部分學校礙於空間限制，難以針對不同運動項目，各別建立球場。再者，安全性、熱門程度、課程規劃等考量，使PU跑道、水泥球場成為多數校方的選擇，大幅限縮其他運動的發展空間。面對這樣的困境，複合式場地的概念應運而生，成為解決空間侷限的新途徑。
+  </p>
+</div>
   <!-- 橫著滾：複合式球場：密集重複運動場域 -->
   <script>
       (function() {
@@ -344,13 +347,62 @@
 </script>
 
 <!-- 面向二-->
+<div style="position: relative; height: 250vh;"> 
+  <!--背景圖-->
+  <div style="
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;">
+    <img
+      src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/dji_fly_20250530_161242_0191_1748592646217_photo.jpg"
+      style="width: 100%; height: 100%; object-fit: cover; display: block;">
+  </div>
+
+  <!-- 🔲 遮罩 + 文字層 -->
+  <div style="
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;">
+    
+    <!-- 外框文字容器：位置會控制遮罩、文字同步出現 -->
+    <div style="position: relative; width: 100%; max-width: 1000px; padding: 60px 40px; box-sizing: border-box; color: black;">
+
+      <!-- 🔳 半透明黑色遮罩 -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        pointer-events: none;">
+      </div>
+
+      <!-- ✏️ 文字內容 -->
+      <div style="position: relative; z-index: 2; text-align: center;">
+        <h1 style="font-size: 42px; text-shadow: 2px 2px 6px rgba(255,255,255,0.6);">
+          運動場改造因地制宜 靈活規劃解空間荒
+        </h1>
+        <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 24px; line-height: 1.8;">
+          複合式場地，顧名思義即一個場地能滿足多種運動需求。在日本、韓國等地狹人稠的國家，這類場地普遍用於基層校園的戶外運動空間，讓學生有機會接觸棒球、足球等不同運動。
+        </div>
+        <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 24px; line-height: 1.8;">
+          而然而，台灣校園內的運動空間設計大多停留在傳統思維，僅設置籃球場或PU跑道，設有複合式場地的學校屈指可數。
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-  <h1 style="text-align: center; font-size: 40px; margin-top: 40px;">
-    運動場改造因地制宜 靈活規劃解空間荒
-  </h1>
-  <p style="font-size: 18px; line-height: 1.8; margin: 20px auto; max-width: 1000px;">
-    複合式場地，顧名思義即一個場地能滿足多種運動需求。在日本、韓國等地狹人稠的國家，這類場地普遍用於基層校園的戶外運動空間，讓學生有機會接觸棒球、足球等不同運動。然而，台灣校園內的運動空間設計大多停留在傳統思維，僅設置籃球場或PU跑道，設有複合式場地的學校屈指可數。  </p>
-</div>
+  
 <!-- 捲動式影片：志開 -->
 <div id="faqnd">
   <script>
@@ -613,8 +665,14 @@
       <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%8A%89%E5%9D%A4%E7%A5%90-Photoroom.png" alt="劉坤祐">
     </div>
   </div>
-  <!--徐正賢-->
-  
+  <!--徐正賢段落-->
+  <div class="chart-pair">
+    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2.png">
+    <p style="font-size: 20px; line-height: 1.8; margin: 20px auto; max-width: 500px;">
+    「我一直覺得，台灣要打棒球最好的地方就是在學校的操場，而且圍網圍起來就可以打了。
+甚至現在廢棄的教室，如果你鋪安全的護墊，然後網子架起來也可以打。所以其實打棒球沒有想像中那麼複雜，這只是想像力的問題。 」
+    </p> 
+  </div>
   <!-- 捲動式影片：捲動式影片：建中 -->
   <div id="gmjoj">  
     <script>
