@@ -105,12 +105,12 @@
 
     .dialog-section {
       position: relative; 
-      min-height: 600px;   /* 可依實際需求調整高度 */
+      height: 100vh; /* ✅ 整個區塊佔滿畫面高度 */
       margin: 100px 0;     /* 與前後區塊的間距 */
       /*background-color: #323D4D*/
     }
 
-    .dialog-box {
+   .dialog-box {
       background-color: #ccc;
       color: black;
       border-radius: 20px;
@@ -118,9 +118,9 @@
       width: 800px;
       position: absolute;
       font-size: 22px;
+      line-height: 1.6;
     }
-
-    .face {
+   .face {
       width: 150px;
       height: 150px;
       border-radius: 50%;
@@ -133,42 +133,42 @@
       position: absolute;
     }
 
-    .face img {
+   .face img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       object-fit: cover;
     }
 
+
     /* 吳柏翰區塊 */
-    #wu-box {
-      bottom: 40px;
-      right: 20px;
-      
+   #wu-box {
+      top: 10%;
+      left: 5%;
     }
     #wu-face {
-      bottom: 60px;
-      right: 20px;
+      bottom: 10%;
+      left: 5%;
     }
 
-    /* 徐正賢區塊 */
+    /* 徐正賢*/
     #hsu-box {
-      top: 200px;
-      left: 20px;
+      top: 40%;
+      right: 5%;
     }
     #hsu-face {
-      top: 300px;
-      left: 20px;
+      bottom: 10%;
+      right: 5%;
     }
-
-    /* 劉坤祐區塊 */
+    
+    /* 劉坤祐*/
     #liu-box {
-      top: 20px;
-      right: 20px;
+      top: 70%;
+      left: 5%;
     }
     #liu-face {
-      top: 100px;
-      right: 20px;
+      bottom: 5%;
+      left: 5%;
     }
     
     .section {
@@ -406,7 +406,7 @@
 </div>
   
 <!-- 捲動式影片：志開 -->
-<div id="faqnd">
+<div id="poehq"> 
   <script>
     (function() {
       var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
@@ -419,13 +419,13 @@
           window[namespace][pkg] = [];
         }
         if (Array.isArray(window[namespace][pkg])) {
-          var data = {"video":{"src":"https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%BF%97%E9%96%8Bbefore%20after%EF%BC%88%E9%9B%BB%E8%85%A6%EF%BC%89.mp4","mobileSrc":"https:\u002F\u002Flab-storytelling-storage.twreporter.org\u002Ffiles\u002Fbefore-after-LH3Pl3bb-5u_ZQD-r5VH-.mp4","duration":11.1111},"captions":[{"id":"filel","width":"narrow","alignment":"left","startTime":0.5,"rawContentState":{"blocks":[{"key":"7ej8t","data":{},"text":"以台南市志開實驗國民小學（以下簡稱志開實小）為例，校方為了解決地勢低窪易積水、跑道雜草叢生的問題，捨棄傳統紅土跑道，改建為天然草皮。這不僅消除了紅土長期飛揚所帶來的健康隱憂，改建成整塊的草皮後，積水與雜草問題也隨之解決。除了解決地勢問題，志開實小校長王念湘也說明校方的其他考量：「我們希望（讓小朋友）更貼近自然，就選了草皮運動場。」","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":166,"offset":0}]}],"entityMap":{}}},{"id":"idlfl","width":"narrow","alignment":"left","startTime":3,"rawContentState":{"blocks":[{"key":"6tgfh","data":{},"text":"草皮沒有畫記、標誌或限制，這讓小朋友得以自由進行喜歡的運動。志開實小會將草皮維持大約3公分的厚度，並定期讓小朋友把碎石和垃圾撿乾淨，安全性更勝原來的紅土跑道，甚至引起一股新風潮。","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":89,"offset":0}]}],"entityMap":{}}},{"id":"elbbg","width":"narrow","alignment":"left","startTime":6,"rawContentState":{"blocks":[{"key":"c16on","data":{},"text":"「他們（小朋友）反而喜歡跌倒，享受在草皮滑倒的那種感覺。」王念湘對此津津樂道。","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":39,"offset":0}]}],"entityMap":{}}},{"id":"iahnc","width":"narrow","alignment":"left","startTime":8.5,"rawContentState":{"blocks":[{"key":"m8nd","data":{},"text":"志開小學生林桓宇則分享：「草地很柔軟，跌倒不會痛，如果下雨之後，草地比較不會積水，他會很快把水吸收，然後草可以長得更好。」","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":61,"offset":0}]}],"entityMap":{}}}],"darkMode":false,"secondsPer100vh":1.5,"uuid":"733ccd42-5a4d-4347-a6d4-31ddccde4840"};
+          var data = {"video":{"src":"https:\u002F\u002Fpub-c49e2363270f4c47a5f18423a4644d11.r2.dev\u002F%E5%BF%97%E9%96%8B%EF%BC%88%E6%96%B0%E9%9B%BB%E8%85%A6%EF%BC%89.mp4","mobileSrc":"https:\u002F\u002Flab-storytelling-storage.twreporter.org\u002Ffiles\u002F-------------------su9Vi22Q8vyb.mp4","duration":11.267},"captions":[{"id":"filel","width":"narrow","alignment":"left","startTime":0.5,"rawContentState":{"blocks":[{"key":"7ej8t","data":{},"text":"以台南市志開實驗國民小學（以下簡稱志開實小）為例，校方為了解決地勢低窪易積水、跑道雜草叢生的問題，捨棄傳統紅土跑道，改建為天然草皮。這不僅消除了紅土長期飛揚所帶來的健康隱憂，改建成整塊的草皮後，積水與雜草問題也隨之解決。除了解決地勢問題，志開實小校長王念湘也說明校方的其他考量：「我們希望（讓小朋友）更貼近自然，就選了草皮運動場。」","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":166,"offset":0}]}],"entityMap":{}}},{"id":"idlfl","width":"narrow","alignment":"left","startTime":3,"rawContentState":{"blocks":[{"key":"6tgfh","data":{},"text":"草皮沒有畫記、標誌或限制，這讓小朋友得以自由進行喜歡的運動。志開實小會將草皮維持大約3公分的厚度，並定期讓小朋友把碎石和垃圾撿乾淨，安全性更勝原來的紅土跑道，甚至引起一股新風潮。","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":89,"offset":0}]}],"entityMap":{}}},{"id":"elbbg","width":"narrow","alignment":"left","startTime":6,"rawContentState":{"blocks":[{"key":"c16on","data":{},"text":"「他們（小朋友）反而喜歡跌倒，享受在草皮滑倒的那種感覺。」王念湘對此津津樂道。","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":39,"offset":0}]}],"entityMap":{}}},{"id":"iahnc","width":"narrow","alignment":"left","startTime":8.5,"rawContentState":{"blocks":[{"key":"m8nd","data":{},"text":"志開小學生林桓宇則分享：「草地很柔軟，跌倒不會痛，如果下雨之後，草地比較不會積水，他會很快把水吸收，然後草可以長得更好。」","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":61,"offset":0}]}],"entityMap":{}}}],"darkMode":false,"secondsPer100vh":1.5,"uuid":"74a4e1af-1b39-4832-ab4b-4b4324c36e42"};
           window[namespace][pkg].push(data);
         }
       }
     })()
   </script>
-  <div id="733ccd42-5a4d-4347-a6d4-31ddccde4840"></div>
+  <div id="74a4e1af-1b39-4832-ab4b-4b4324c36e42"></div>
   <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
 </div>
 <!-- 捲動式影片：向上國中球場 -->
