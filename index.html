@@ -230,6 +230,16 @@
       width: 100%;
       margin: 30px 0;
     }
+    .text-box-with-border {
+      border: 4px solid white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 900px;
+      font-size: 18px;
+      line-height: 1.8;
+      background-color: rgba(255, 255, 255, 0.05); /* 淡背景可加可不加 */
+      margin-bottom: 60px;
+    }
     
     .block-pair {
       display: flex;
@@ -691,7 +701,7 @@
  <div style="display: flex; gap: 10px; margin-top: 50px; align-items: center;">
     <!-- 左側圖片容器 -->
     <div style="display: flex; align-items: flex-end;">
-      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2%E5%8D%8A%E8%BA%AB.png"
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2%EF%BC%8D%E5%8E%BB%E8%83%8C%E5%9C%96.png"
            style="width: 700px; height: auto; object-fit: contain; display: block;">
     </div>
   
@@ -751,22 +761,11 @@
     <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-video.js"></script>
   </div>
   <!-- 數據區塊：左右圖表 -->
-  <div class="block-center fade-in">
-    <div style="position: relative; max-width: 500px;">
-      <!-- 半透明遮罩 -->
-      <div style="
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 4px solid white;  /* 加上白色框線，可依需求調整粗細 */
-        border-radius: 20px;      /* 圓角保持 */
-        pointer-events: none;
-        z-index: 1;">
-        <div class="text" style= z-index: 2;'>
-          <p>台灣對於複合式場地的建設與多元運動空間的推廣仍不普及。目前，校園運動場仍以PU跑道等單一功能設施為主流，雖然維護相對容易，但建設成本高昂且汰換率高，難以滿足學生多元的運動需求。「這個東西很難用金錢價值去衡量它。」李秉諾表達他的看法，他認為如果鋪設複合式場地能改善校園運動安全、營造提升運動風氣，甚至提高競技水準，長遠來看絕對是值得的投資。</p>
-        </div>
+ <div class="block-center fade-in">
+    <div class="text-box-with-border">
+      <p>
+        台灣對於複合式場地的建設與多元運動空間的推廣仍不普及。目前，校園運動場仍以PU跑道等單一功能設施為主流，雖然維護相對容易，但建設成本高昂且汰換率高，難以滿足學生多元的運動需求。「這個東西很難用金錢價值去衡量它。」李秉諾表達他的看法，他認為如果鋪設複合式場地能改善校園運動安全、營造提升運動風氣，甚至提高競技水準，長遠來看絕對是值得的投資。
+      </p>
     </div>
   </div>
   <div class="block-center fade-in">
