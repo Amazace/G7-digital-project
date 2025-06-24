@@ -46,9 +46,8 @@
       font-size: 18px;
       line-height: 1.8;
       max-width: 1000px;
-      margin: 0 auto;
+      margin: 50px auto;
       text-align: left;
-      margin-bottom: 50px;
     }
 
 
@@ -145,7 +144,7 @@
       align-items: flex-start;
       margin-bottom: 20px;
       .avatar {
-        width: 120px;
+        width: 150px;
         text-align: center;
         flex-shrink: 0;
       }
@@ -171,7 +170,7 @@
 
     .remote {
       .text {
-        margin-left: 20px;
+        margin-left: 30px;
         margin-right: 80px;
         color: #eee;
         background-color: #60a1ba;
@@ -185,7 +184,7 @@
     .local {
       justify-content: flex-end;
       .text {
-        margin-right: 20px;
+        margin-right: 30px;
         margin-left: 80px;
         order: -1;
         background-color: #fff;
@@ -401,7 +400,6 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    max-width: 1400px;
     transform: translate(-50%, -50%);
     z-index: 2;
     color: #f1f1f1;
@@ -411,16 +409,15 @@
     <h1 style="
       font-size: 40px;
       text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
-      width: 100%;
-      max-width: none;">
+      width: 1400px;">
       運動場改造因地制宜　靈活規劃解空間荒
     </h1>
 
-    <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
+    <div style="width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
       複合式場地，顧名思義即一個場地能滿足多種運動需求。在日本、韓國等地狹人稠的國家，這類場地普遍用於基層校園的戶外運動空間，讓學生有機會接觸棒球、足球等不同運動。
     </div>
 
-    <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
+    <div style="width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
       然而，台灣校園內的運動空間設計大多停留在傳統思維，僅設置籃球場或PU跑道，設有複合式場地的學校屈指可數。
     </div>
 
@@ -581,7 +578,7 @@
     <!-- 外框文字容器：位置會控制遮罩、文字同步出現 -->
     <div style="position: relative; width: 100%; max-width: 1000px; padding: 60px 40px; box-sizing: border-box; color: black;">
 
-      <!-- 🔳 半透明黑色遮罩 -->
+      <!-- 🔳 半透明遮罩 -->
       <div style="
         position: absolute;
         top: 0;
@@ -662,8 +659,8 @@
     學生、民眾該如何找到合適的場地從事相關運動，是影響國家運動文化發展的重要因素之一。　圖／李宸緯攝
   </p>
   
-  <div class="dialogue fade-in" style='margin-top:100px;'>
-    <div class="user remote">
+  <div class="dialogue" style='margin-top:100px;'>
+    <div class="user remote fade-in">
       <div class="avatar">
         <div class="pic">
           <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%8A%89%E5%9D%A4%E7%A5%90-Photoroom.png" />
@@ -672,7 +669,7 @@
       </div>
       <div class="text">有些學校老師本就不多，若再建置新設施並要求老師管理，可能更難找到人願意負責。因此教師人力不足是複合式運動場不易落實的主因，而管理場地的額外責任也會降低教師意願。｜國立屏東科技大學休閒運動健康系副教授</div>
     </div>
-    <div class="user local">
+    <div class="user local fade-in">
       <div class="avatar">
         <div class="pic">
           <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2-Photoroom.png" />
@@ -681,7 +678,7 @@
       </div>
       <div class="text"> 關鍵在於議員、立委與校長是否具備正確的運動空間規劃觀念。若決策者缺乏正確的運動空間規劃觀念，往往在申請經費時就會依循傳統思維，而預算一旦核定，就必須依照最初規劃，建設傳統操場。｜台灣運動產業協會理事長</div>
     </div>
-    <div class="user remote">
+    <div class="user remote fade-in">
       <div class="avatar">
         <div class="pic">
           <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%90%B3%E6%9F%8F%E7%BF%B0-Photoroom.png" />
@@ -693,18 +690,43 @@
   </div>
 
   <!--徐正賢段落-->
- <div style="display: flex; align-items: flex-end; gap: 40px; margin-top: 50px">
-   <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2%E5%8D%8A%E8%BA%AB.png"
-      style="width: 700px; height: auto; object-fit: contain; display: block;">
-    <div>
-      <p class="fade-in" style="font-size: 22px; line-height: 1.8; margin: 20px auto; max-width: 500px;">
-    「我一直覺得，台灣要打棒球最好的地方就是在學校的操場，而且圍網圍起來就可以打了。甚至現在廢棄的教室，如果你鋪安全的護墊，然後網子架起來也可以打。所以其實打棒球沒有想像中那麼複雜，這只是想像力的問題。 」
-      </p>
-      <p class="fade-in" style="font-size: 22px; line-height: 1.8; margin: 20px auto; max-width: 500px;">
-        - PEAK FORCE蓬勃國際運動事業創辦人　徐正賢
+ <div style="display: flex; gap: 40px; margin-top: 50px; align-items: center;">
+    <!-- 左側圖片容器 -->
+    <div style="display: flex; align-items: flex-end;">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2%E5%8D%8A%E8%BA%AB.png"
+           style="width: 700px; height: auto; object-fit: contain; display: block;">
+    </div>
+  
+    <!-- 右側文字容器（相對定位） -->
+    <div style="position: relative; max-width: 500px;">
+  
+      <!-- 半透明遮罩 -->
+      <div style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: 1;
+        border-radius: 20px;
+        pointer-events: none;">
+      </div>
+  
+      <!-- 文字區塊 -->
+      <p class="fade-in" style="
+        font-size: 28px;
+        line-height: 1.8;
+        margin: 0;
+        padding: 20px;
+        z-index: 2;
+        position: relative;
+        text-align: justify;">
+        「我一直覺得，台灣要打棒球最好的地方就是在學校的操場，而且圍網圍起來就可以打了。甚至現在廢棄的教室，如果你鋪安全的護墊，然後網子架起來也可以打。所以其實打棒球沒有想像中那麼複雜，這只是想像力的問題。」
       </p>
     </div>
   </div>
+
   <!-- 捲動式影片：捲動式影片：建中 -->
   <div id="gmjoj">  
     <script>
