@@ -15,7 +15,7 @@
     
     .body {
       font-family: Microsoft JhengHei', sans-serif;
-      background-color: #f1f1f1;
+      background-color: #323D4D;
       margin: 0;
       padding: 0;
     }
@@ -145,9 +145,9 @@
         margin-left: 20px;
         margin-right: 80px;
         color: #eee;
-        background-color: #4179f1;
+        background-color: #60a1ba;
         &::before {
-          border-right: 10px solid #4179f1;
+          border-right: 10px solid #60a1ba;
           left: -10px;
         }
       }
@@ -178,7 +178,7 @@
         border-bottom: 10px solid transparent;
       }
       .text {
-        font-weight: 300;
+        font-weight: bold;
         box-shadow: 0 0 10px #888;
       }
     }
@@ -360,32 +360,40 @@
 </script>
 
 <!-- 面向二-->
-<div style="position: relative; height: 100vh;"> 
-  <!--背景圖-->
-  <div style="
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 0;
-    overflow: hidden;">
-    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/DSC09448.JPG">
+<div style="position: relative; height: 100vh; overflow: hidden;"> 
+  <!-- 背景圖 -->
+  <img 
+    src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/DSC09448.JPG"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;"
+  >
 
-    <!-- ✏️ 文字內容 -->
-  <div style="position: relative; z-index: 2; max-width: 1000px text-align: center; color:#f1f1f1;">
+  <!-- 文字內容 -->
+  <div style="
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 1000px;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;">
+    
     <h1 style="font-size: 42px; text-shadow: 2px 2px 6px rgba(0,0,0,0.6);">
       運動場改造因地制宜 靈活規劃解空間荒
     </h1>
+
     <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
       複合式場地，顧名思義即一個場地能滿足多種運動需求。在日本、韓國等地狹人稠的國家，這類場地普遍用於基層校園的戶外運動空間，讓學生有機會接觸棒球、足球等不同運動。
     </div>
+
     <div style="max-width: 800px; margin: 50px auto 0; text-align: left; font-size: 20px; line-height: 1.8;">
       然而，台灣校園內的運動空間設計大多停留在傳統思維，僅設置籃球場或PU跑道，設有複合式場地的學校屈指可數。
     </div>
+
   </div>
 </div>
-  
+
 <!-- 捲動式影片：志開 -->
 <div id="poehq"> 
   <script>
@@ -652,11 +660,11 @@
   </div>
 
   <!--徐正賢段落-->
-  <div class= "fade-in" style= "display: flex; align-items: center; gap: 10px;">
+  <div class= "fade-in" style= "display: flex; align-items: center; gap: 0px;">
    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%BE%90%E6%AD%A3%E8%B3%A2.png"
       style="width: 600px; height: auto;">
     <div>
-      <p style="font-size: 22px; line-height: 1.8; margin: 20px auto; margin-top: 40px; max-width: 500px;">
+      <p style="font-size: 22px; line-height: 1.8; margin: 20px auto; margin-top: 60px; max-width: 500px;">
     「我一直覺得，台灣要打棒球最好的地方就是在學校的操場，而且圍網圍起來就可以打了。甚至現在廢棄的教室，如果你鋪安全的護墊，然後網子架起來也可以打。所以其實打棒球沒有想像中那麼複雜，這只是想像力的問題。 」
       </p>
       <p style="font-size: 22px; line-height: 1.8; margin: 20px auto; max-width: 500px;">
