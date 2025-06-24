@@ -145,12 +145,18 @@
         
     .user {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end; /* 對齊子元素底部 */
+      margin-bottom: 40px;
+    
       .avatar {
         width: 150px;
         text-align: center;
         flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* 讓大頭貼靠下 */
       }
+    
       .pic {
         border-radius: 50%;
         overflow: hidden;
@@ -159,18 +165,23 @@
           vertical-align: middle;
         }
       }
+    
       .name {
         color: #333;
         font-weight: bold;
+        margin-top: 10px;
       }
+    
       .text {
         background-color: #aaa;
         padding: 20px;
         border-radius: 10px;
         position: relative;
         font-weight: bold;
+        margin-bottom: 0;
       }
     }
+
 
     .remote {
       .text {
