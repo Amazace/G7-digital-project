@@ -12,7 +12,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
-    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     .body {
       font-family: Microsoft JhengHei', sans-serif;
       background-color: #323D4D;
@@ -22,6 +26,28 @@
     .storytelling-react-scrollable-image-container {
       max-width: 100%;
     }
+    .planning-section {
+      width: 100%;
+      background-color: #f1f1f1;
+      color: #000;
+      padding: 80px 20px; /* ✅ 取代 h1 的 margin-top */
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .planning-section h1 {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+    
+    .planning-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
 
     .image-grid {
       display: grid;
@@ -187,7 +213,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 60px 0;
+      padding: 60px 0;
       background-color: #323D4D;
       color: white;
         }
@@ -316,11 +342,11 @@
 <div id=318d0475-f11b-4f3e-a994-374ed08369de></div>
 
 <script type="text/javascript" crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
-<div class='fade-in' style="position: relative; height: 50vh; width: 100%; background-color:#f1f1f1">
-  <h1 style="text-align: center; font-size: 22px; margin-top: 100px;">  
+<div class="fade-in planning-section">
+  <h1>
     空間規劃不善難容多樣運動
   </h1>
-  <p style="font-size: 18px; line-height: 1.8; margin: 20px auto ;max-width: 1000px;">
+  <p>
     這些學生的經歷皆說明，台灣在校園運動空間規劃上的缺失。大部分學校礙於空間限制，難以針對不同運動項目，各別建立球場。再者，安全性、熱門程度、課程規劃等考量，使PU跑道、水泥球場成為多數校方的選擇，大幅限縮其他運動的發展空間。面對這樣的困境，複合式場地的概念應運而生，成為解決空間侷限的新途徑。
   </p>
 </div>
