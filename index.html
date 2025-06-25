@@ -34,23 +34,43 @@
       background-color: #f1f1f1;
       color: #000;
       box-sizing: border-box;
+      padding: 50px 20px;
       text-align: center;
-    
-      /* 解決 margin collapse 的關鍵 */
-      padding-bottom: 50px;
-      overflow: hidden; /* 或可用這行替代 padding 方法 */
-    }
-
-    .planning-section h1 {
-      font-size: 22px;
-      margin-bottom: 30px;
+      overflow: hidden;
     }
     
-    .planning-section p {
+    /* 1️⃣ 圖片貼頂、置中 */
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      margin-bottom: 40px;
+    }
+    .img-wrapper img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* 2️⃣ 標題加底色、圓角與內距 */
+    .heading-box {
+      background-color: #323D4D;
+      color: #f1f1f1;
+      border-radius: 20px;
+      padding: 20px 30px;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    
+    /* 3️⃣ 內文樣式 */
+    .planning-paragraph {
+      color: #323D4D;
       font-size: 18px;
       line-height: 1.8;
       max-width: 1000px;
-      margin: 50px auto;
+      margin: 0 auto;
       text-align: left;
     }
 
@@ -368,36 +388,25 @@
 <div id=4c389204-3062-4ff8-bf2a-731c191cca2c></div>
 
 <script type="text/javascript" crossorigin src="https://unpkg.com/@twreporter/dual-channel@2.1.4/dist/main.d1f6d30de1b41dfaf8a1.bundle.js"></script>
-<div class="planning-section" style='display: flex; justify-content: center;'>
-  <img src='https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E9%9D%A2%E5%90%91%E4%B8%80%E7%AE%AD%E9%A0%AD.png'>
-  <div style="
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #323D4D;
-    z-index: 1;
-    border-radius: 20px;
-    pointer-events: none;">
+<div class="planning-section">
+
+  <!-- 1️⃣ 圖片置中並貼頂 -->
+  <div class="img-wrapper">
+    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E9%9D%A2%E5%90%91%E4%B8%80%E7%AE%AD%E9%A0%AD.png" alt="箭頭">
   </div>
 
-  <!-- 文字區塊 -->
-  <h1 class="fade-in" style="
-    font-size: 30px;
-    font-weight: bold;
-    color: #f1f1f1;
-    line-height: 1.8;
-    margin: 0;
-    z-index: 2;
-    position: relative;
-    text-align: justify;">
+  <!-- 2️⃣ 標題區塊，底色＋圓角＋間距 -->
+  <h1 class="fade-in heading-box">
     空間規劃不善難容多樣運動
   </h1>
-  <p style='color: #323D4D'>
+
+  <!-- 3️⃣ 內文區塊 -->
+  <p class="planning-paragraph">
     這些學生的經歷皆說明，台灣在校園運動空間規劃上的缺失。大部分學校礙於空間限制，難以針對不同運動項目，各別建立球場。再者，安全性、熱門程度、課程規劃等考量，使PU跑道、水泥球場成為多數校方的選擇，大幅限縮其他運動的發展空間。面對這樣的困境，複合式場地的概念應運而生，成為解決空間侷限的新途徑。
   </p>
+
 </div>
+
   <!-- 橫著滾：複合式球場：密集重複運動場域 -->
   <script>
       (function() {
