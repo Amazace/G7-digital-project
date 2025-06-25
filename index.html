@@ -24,6 +24,13 @@
       margin: 0;
       padding: 0;
     }
+
+    @keyframes float {
+      0% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, 10px); }
+      100% { transform: translate(-50%, 0); }
+    }
+
     
     .storytelling-react-scrollable-image-container {
       max-width: 100%;
@@ -349,7 +356,7 @@
     pointer-events: none;">
   </div>
 
-  <!-- 文字 -->
+  <!-- 文字與圖標 -->
   <div style="
     position: absolute;
     z-index: 2;
@@ -358,15 +365,33 @@
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding: 40px; box-sizing: border-box;
     color: white; text-align: center;">
+
+    <!-- 主標 -->
     <h1 style="text-align: center; font-size: 48px; margin-top: 50px; text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);">
       校園運動空間規劃不善　複合式場地突破舊思維
     </h1>
+
+    <!-- 小三角圖標 -->
+    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%B0%8F%E4%B8%89%E8%A7%92.png"
+         alt="Scroll indicator"
+         style="
+           width: 30px;
+           margin: 40px 0;
+           position: absolute;
+           bottom: 40px;
+           left: 50%;
+           transform: translateX(-50%);
+           z-index: 3; animation: float 2s infinite;
+         ">
+
+    <!-- 內文 -->
     <div style="max-width: 800px; text-align: left; font-size: 20px; line-height: 2.2; margin-top: 250px;">
       2024年世界棒球12強賽（WBSC Premier 12）逆襲日本奪冠，國內掀起一股棒球熱潮。前美國職業棒球大聯盟球探鐘勝宏在感受完球賽的激情與鬥志後，心血來潮想要去戶外傳接球、投打時，卻發現場地限縮了自由從事棒球運動的空間。鐘勝宏也曾與地方首長討論棒球的發展現況，他強調：「目前大約每七萬人才有一座球場可以用。」顯示現有場地數量，難以滿足廣大棒球愛好者的需求。
     </div>
   </div>
 </div>
 <!-- 封面區塊結束 -->
+
 <!-- 左右互搏：面向一 -->
 <script>
   (function() {
