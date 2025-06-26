@@ -442,39 +442,83 @@
 </div>
 
   <!-- 橫著滾：複合式球場：密集重複運動場域 -->
-  <script>
-      (function() {
-        var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
-        var pkg = 'scrollable-image';
-        if (typeof window != 'undefined') {
-          if (!window.hasOwnProperty(namespace)) {
-            window[namespace] = {};
-          }
-          if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
-            window[namespace][pkg] = [];
-          }
-          if (Array.isArray(window[namespace][pkg])) {
-            var data = {"className":"storytelling-react-scrollable-image-container","imgObjs":[{"url":"https:\u002F\u002Flab-storytelling-storage.twreporter.org\u002Fimages\u002F2b613204-559d-4a93-a805-238193af5b41.png"}],"captions":[{"width":"19.939999999999998%","height":"20.64%","position":{"top":"8.450000000000001%","left":"3.19%"},"rawContentState":{"blocks":[{"key":"c2c34","data":{},"text":"空間規劃不善難容多樣運動","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":12,"offset":0},{"style":"FONT_COLOR_#ffffff","length":12,"offset":0}]},{"key":"2mrel","data":{},"text":"以嘉義市區為例，範圍中共有七座相同的運動場地，此態亦普遍存在於全台各地，顯示傳統運動場地過度重複的問題。","type":"unstyled","depth":0,"entityRanges":[],"inlineStyleRanges":[{"style":"BOLD","length":52,"offset":0},{"style":"FONT_COLOR_#ffffff","length":52,"offset":0}]}],"entityMap":{}}}],"darkMode":false,"minHeight":undefined,"maxHeight":undefined,"uuid":"b7c1f316-59f9-4054-aa0c-078dda9b7dcd"};
-            window[namespace][pkg].push(data);
-          }
-        }
-      })()
-    </script>
-    <div id="b7c1f316-59f9-4054-aa0c-078dda9b7dcd"></div>
-    <script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
-<script>
-  // 當網頁載入完成後啟動
-  window.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.storytelling-react-scrollable-image-container');
-    if (container) {
-      container.addEventListener('wheel', function (e) {
-        e.preventDefault(); // 防止預設垂直滾動
-        const scrollSpeed = 0.5; // 0.2 表示速度減慢到原來的 20%
-        container.scrollLeft += e.deltaY * scrollSpeed;
-      });
+ <!-- 橫著滾吧！：複合式球場：密集重複運動 --><style>
+  /* 給報導者文章頁使用 */
+  /* 將元件往上移動，使其與上一個區塊連接在一起。*/
+  /* 刪除下方註解即可使用。 */
+  /*
+  .storytelling-react-scrollable-image-container {
+    margin-top: -40px;
+  }
+  */
+
+  /* 給報導者文章頁使用 */
+  /* 將元件向左移動，撐滿文章頁 */
+  /* 刪除下方註解即可使用。 */
+  /*
+  @media (max-width: 767px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: -3.4vw;
     }
-  });
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: calc((100vw - 512px)/2 * -1);
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: calc((100vw - 550px)/2 * -1);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: calc((100vw - 730px)/2 * -1);
+    }
+  }
+  */
+
+  /* 給少年報導者文章頁使用 */
+  /* 將元件向左移動，撐滿文章頁 */
+  /* 刪除下方註解即可使用。 */
+  /*
+  @media (max-width: 767px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: -5vw;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .storytelling-react-scrollable-image-container {
+      margin-left: calc((100vw - 700px)/2 * -1);
+    }
+  }
+  */
+</style>
+    
+<script>
+  (function() {
+    var namespace = '@story-telling-reporter/react-embed-code-generator@2.2.13';
+    var pkg = 'scrollable-image';
+    if (typeof window != 'undefined') {
+      if (!window.hasOwnProperty(namespace)) {
+        window[namespace] = {};
+      }
+      if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
+        window[namespace][pkg] = [];
+      }
+      if (Array.isArray(window[namespace][pkg])) {
+        var data = {"className":"storytelling-react-scrollable-image-container","imgObjs":[],"captions":[],"darkMode":false,"minHeight":undefined,"maxHeight":undefined,"uuid":"ae24a176-740e-409c-bc08-c536815bf656"};
+        window[namespace][pkg].push(data);
+      }
+    }
+  })()
 </script>
+<div id="ae24a176-740e-409c-bc08-c536815bf656"></div>
+<script type="text/javascript" defer crossorigin src="https://cdn.jsdelivr.net/npm/@story-telling-reporter/react-embed-code-generator@2.2.13/dist/scrollable-image.js"></script>
 
 <!-- 面向二-->
 <div style="position: relative; height: 110vh; overflow: hidden;"> 
