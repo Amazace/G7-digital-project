@@ -297,9 +297,14 @@
       margin-top: 100px;
     } 
     
-    .map-block,
     .chart-pair {
       max-width: 1000px;
+    }
+    
+    .map-block {
+      max-width: 1000px;
+      width: 100%;
+      flex: 1 1 300px;
     }
     
     .chart-pair {
@@ -487,7 +492,7 @@
     padding: 20px;
     color: #f1f1f1;
     text-align: center;
-    margin-top: -10vh;
+    margin-top: -20vh;
   ">
     
     <h1 style="font-size: 42px; text-shadow: 2px 2px 6px rgba(0,0,0,0.6); max-width: 100%; margin: 0 auto;">
@@ -861,7 +866,8 @@
     <div class="map-block fade-in" >
       <iframe title="各縣市複合式場地分布圖" aria-label="地图" id="datawrapper-chart-uR15q"
         src="https://datawrapper.dwcdn.net/uR15q/6/" scrolling="no" frameborder="0"
-        style="border: none;" width="542" height="800" data-external="1"></iframe>
+        style="border: none; width: 100%; height: 800px;" data-external="1">
+      </iframe>
     </div>
   </div>
   <div class="block-center fade-in" style= 'padding: 80px;'>
