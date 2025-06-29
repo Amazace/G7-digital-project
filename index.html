@@ -56,6 +56,16 @@
       max-width: 200px;
       height: auto;
     }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .floating-image {
+      animation: float 2s ease-in-out infinite;
+    }
     
     /* 2️⃣ 標題加底色、圓角與內距 */
     .heading-box {
@@ -384,9 +394,9 @@
 
     <!-- 主標 -->
     <div style="margin-top: 5vh; width: 100%; display: flex; justify-content: center;">
-      <img
+      <img class="floating-image"
         src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/cover-text%20(1).png"
-        style="width: 100%; max-width: 850px; height: auto; display: block; animation: float 2s ease-in-out infinite;">
+        style="width: 100%; max-width: 850px; height: auto; display: block;">
     </div>
 
     <!-- 小三角圖標 -->
