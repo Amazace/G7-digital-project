@@ -345,12 +345,12 @@
 </head>
 <body>
 <!-- 封面區塊開始 -->
-<div style="position: relative; height: 200vh; overflow-x: hidden;">
+<div style="position: relative; height: 200vh">
 
   <!-- 背景影片 -->
   <div style="position: sticky; top: 0; height: 100vh; overflow: hidden; z-index: -1;">
     <video autoplay loop muted playsinline webkit-playsinline
-      style="width: 100vw; height: 100vh; object-fit: cover; display: block;">
+      style="width: 100%; height: 100%; object-fit: cover; display: block;">
       <source src="assets/cover (1) - Compressed with FlexClip.mp4" type="video/mp4">
     </video>
   </div>
@@ -359,7 +359,7 @@
   <div style="
     position: absolute;
     top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    width: 100%; height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 50%, rgba(0, 0, 0, .75) 100%);
     z-index: 1;
     pointer-events: none;">
@@ -370,43 +370,36 @@
     position: absolute;
     z-index: 2;
     top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    width: 100%; height: 100%;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     padding: 15px; box-sizing: border-box;
-    color: white; text-align: center;
-    overflow-x: hidden;
-  ">
+    color: white; text-align: center;">
 
     <!-- 主標 -->
-    <div style="margin-top: 5vh; display: flex; justify-content: center; width: 100%;">
-      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/cover-text%20(1).png"
-           style="width: 90%; max-width: 850px; height: auto;">
+    <div style="margin-top: 5vh; display: flex; justify-content: center;">
+      <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/cover-text%20(1).png" style="max-width: 850px;">
     </div>
 
     <!-- 小三角圖標 -->
     <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%B0%8F%E4%B8%89%E8%A7%922.png"
          alt="Scroll indicator"
          style="
-           width: 40px;
+           width: 50px;
            height: auto;
-           margin: 40px 0 20px 0;
+           margin: 40px;
+           transform: translateX(-50%);
+           z-index: 3;
            animation: float 2s infinite;
          ">
 
     <!-- 內文 -->
-    <div style="
-      max-width: 90vw;
-      width: 800px;
-      text-align: left;
-      font-size: 18px;
-      line-height: 1.8;
-      margin-top: 80px;
-    ">
+    <div class="fade-in" style="max-width: 800px; text-align: left; font-size: 22px; line-height: 2.2; margin-top: 150px;">
       2024年世界棒球12強賽（WBSC Premier 12）逆襲日本奪冠，國內掀起一股棒球熱潮。前美國職業棒球大聯盟球探鐘勝宏在感受完球賽的激情與鬥志後，心血來潮想要去戶外傳接球、投打時，卻發現場地限縮了自由從事棒球運動的空間。鐘勝宏也曾與地方首長討論棒球的發展現況，他強調：「目前大約每七萬人才有一座球場可以用。」顯示現有場地數量，難以滿足廣大棒球愛好者的需求。
     </div>
   </div>
 </div>
 <!-- 封面區塊結束 -->
+
 
 <!-- 左右互搏：面向一 -->
 <script>
