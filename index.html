@@ -24,13 +24,6 @@
       margin: 0;
       padding: 0;
     }
-
-
-    @keyframes float {
-      0% { transform: translate(-50%, 0); }
-      50% { transform: translate(-50%, 10px); }
-      100% { transform: translate(-50%, 0); }
-    }
     
     .storytelling-react-scrollable-image-container {
       max-width: 100%;
@@ -400,7 +393,8 @@
     </div>
 
     <!-- 小三角圖標 -->
-    <img src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%B0%8F%E4%B8%89%E8%A7%922.png"
+    <img class="floating-image"
+         src="https://pub-c49e2363270f4c47a5f18423a4644d11.r2.dev/%E5%B0%8F%E4%B8%89%E8%A7%922.png"
          alt="Scroll indicator"
          style="
            width: 50px;
@@ -408,7 +402,6 @@
            margin: 40px;
            transform: translateX(-50%);
            z-index: 3;
-           animation: float 2s infinite;
          ">
 
     <!-- 內文 -->
